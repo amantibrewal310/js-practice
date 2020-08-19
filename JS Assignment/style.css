@@ -1,0 +1,134 @@
+:root {
+    --bg-clr: #f8f8f8;
+    --txt-clr: #707070;
+    --clr1 : #1792D2;
+    --clr2 : #143774;
+
+    /* 
+        Lora - 3.375rem
+        Subtitle: Ubuntu bold - 1rem
+        Navingation: Ubuntu bold - 1rem
+    */
+}
+/* -------------------Layout ------------------------- */
+body {
+    margin: 0;
+    font-family: 'Ubuntu', 'sans-serif';
+}
+header {
+    text-align: center;
+    background-color: var(--bg-clr);
+    padding: 2em 0;
+}
+.container {
+    width: 95%;
+    max-width: 980px;
+    margin: 2em auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.col {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+.right {
+    float: right;
+}
+
+.btn {
+    outline: none;
+    cursor: pointer;
+    padding:0.7em;
+    margin: 0.5em;
+    border-radius: 0.7em;
+    border: 1px solid var(--clr1);
+    background: var(--clr2);
+    color: var(--bg-clr);
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: var(--clr2);
+    color: var(--bg-clr);
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 0.75em 1em;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid var(--txt-clr);
+}
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f2f3f3;
+}
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--clr2);
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: var(--clr2);
+}
+
+#add-user-form {
+    display: none;
+}
+
+.form-field > input{
+    padding: 0.5em 0.7em;
+    border-radius: 10px;
+    border: 1px solid var(--clr2);
+    margin-left: -3px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.form-field > input:focus {
+    outline: none;
+}
+.form-field > p {
+    margin-left: 0;
+}
+
+.error {
+    color: red;
+}
+
+
+
+
+/* -------------------Typography ------------------------- */
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: var(--clr2);
+    margin-top: 0;
+
+}
+
+h1 {
+    
+    font-size: 2rem;
+    margin: 0;
+}

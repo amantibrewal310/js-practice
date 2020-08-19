@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Database</title>
+    <link type="text/css" rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header><h1>User Data</h1></header>
+    <div class="container flex col">
+        <section>
+            <table class="content-table">
+                <thead>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </thead>
+                <tbody>
+                    <tr id="no-data-row">
+                        <td></td>
+                        <td>NO DATA</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class ="btn right" id="add-user-btn">Add User</button>
+        </section>
+        <section class="container form flex" id="add-user-form">
+            <div class="form-field">
+                <label>Name</label>
+                <input name = "name" type="text" class="form-input" id="name" required>
+                <p id = "name-check-message" class = "error"></p>
+            </div>
+            <div class="form-field">
+                <label>Email</label>
+                <input name="email" type="email" class="form-input" id="email" required>
+                <p id = "email-check-message" class ="error"></p>
+            </div>
+                <button id ="submit-btn" class = "btn right">Submit</button>
+        </section>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
